@@ -4,11 +4,11 @@ const routes = [{
   path: '/',
   redirect: '/login'
 },
-{
-  path: '/init',
-  name: 'Init',
-  component: () => import('@/view/init/index.vue')
-},
+// {
+//   path: '/init',
+//   name: 'Init',
+//   component: () => import('@/view/init/index.vue')
+// },
 {
   path: '/login',
   name: 'Login',

@@ -35,6 +35,6 @@ return {
 ```
 
 # 开发备注
-gva版本 `2.5.3`
+gva版本 `2.5.3b`
 
 Commit Hash（SHA）：[23e2b9f](https://github.com/flipped-aurora/gin-vue-admin/tree/23e2b9fd02283a19c050ea351ccc8c64bbfb25dd)
