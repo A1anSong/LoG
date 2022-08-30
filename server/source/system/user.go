@@ -50,7 +50,7 @@ func (i *initUser) InitializeData(ctx context.Context) (next context.Context, er
 	entities := []sysModel.SysUser{
 		{
 			UUID:        uuid.NewV4(),
-			Username:    "a1an",
+			Username:    "A1anSong",
 			Password:    adminPassword,
 			NickName:    "A1anSong",
 			HeaderImg:   "https://qmplusimg.henrongyi.top/gva_header.jpg",
