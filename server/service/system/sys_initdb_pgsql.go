@@ -3,7 +3,6 @@ package system
 import (
 	"context"
 	"errors"
-	"fmt"
 	"path/filepath"
 
 	"github.com/flipped-aurora/gin-vue-admin/server/config"
@@ -52,11 +51,11 @@ func (h PgsqlInitHandler) EnsureDB(ctx context.Context, conf *request.InitDB) (n
 		return ctx, nil
 	} // 如果没有数据库名, 则跳出初始化数据
 
-	dsn := conf.PgsqlEmptyDsn()
-	createSql := fmt.Sprintf("CREATE DATABASE %s;", c.Dbname)
-	if err = createDatabase(dsn, "pgx", createSql); err != nil {
-		return nil, err
-	} // 创建数据库
+	//dsn := conf.PgsqlEmptyDsn()
+	//createSql := fmt.Sprintf("CREATE DATABASE %s;", c.Dbname)
+	//if err = createDatabase(dsn, "pgx", createSql); err != nil {
+	//	return nil, err
+	//} // 创建数据库
 
 	var db *gorm.DB
 	if db, err = gorm.Open(postgres.New(postgres.Config{

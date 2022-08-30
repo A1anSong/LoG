@@ -50,13 +50,13 @@ func (i *initUser) InitializeData(ctx context.Context) (next context.Context, er
 	entities := []sysModel.SysUser{
 		{
 			UUID:        uuid.NewV4(),
-			Username:    "admin",
+			Username:    "a1an",
 			Password:    adminPassword,
-			NickName:    "Mr.奇淼",
+			NickName:    "A1anSong",
 			HeaderImg:   "https://qmplusimg.henrongyi.top/gva_header.jpg",
 			AuthorityId: 888,
-			Phone:       "17611111111",
-			Email:       "333333333@qq.com",
+			Phone:       "19917910925",
+			Email:       "387805107@qq.com",
 		},
 		{
 			UUID:        uuid.NewV4(),

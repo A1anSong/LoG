@@ -44,7 +44,7 @@ export default ({
   const esbuild = {}
 
   return {
-    base: './', // index.html文件所在位置
+    base: '/', // index.html文件所在位置
     root: './', // js导入的资源路径，src
     resolve: {
       alias,
