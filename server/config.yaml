@@ -7,7 +7,7 @@ aliyun-oss:
   base-path: yourBasePath
 autocode:
   transfer-restart: true
-  root: D:\Projects\LoG
+  root: D:\Projects\BoLong\LoG
   server: /server
   server-api: /api/v1/%s
   server-plug: /plugin/%s
