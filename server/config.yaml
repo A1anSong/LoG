@@ -37,32 +37,32 @@ captcha:
 cors:
   mode: whitelist
   whitelist:
-  - allow-origin: example1.com
-    allow-methods: GET, POST
-    allow-headers: content-type
-    expose-headers: Content-Length, Access-Control-Allow-Origin, Access-Control-Allow-Headers,
-      Content-Type
-    allow-credentials: true
-  - allow-origin: example2.com
-    allow-methods: GET, POST
-    allow-headers: content-type
-    expose-headers: Content-Length, Access-Control-Allow-Origin, Access-Control-Allow-Headers,
-      Content-Type
-    allow-credentials: true
+    - allow-origin: example1.com
+      allow-methods: GET, POST
+      allow-headers: content-type
+      expose-headers: Content-Length, Access-Control-Allow-Origin, Access-Control-Allow-Headers,
+        Content-Type
+      allow-credentials: true
+    - allow-origin: example2.com
+      allow-methods: GET, POST
+      allow-headers: content-type
+      expose-headers: Content-Length, Access-Control-Allow-Origin, Access-Control-Allow-Headers,
+        Content-Type
+      allow-credentials: true
 db-list:
-- disable: false
-  type: ""
-  alias-name: ""
-  path: ""
-  port: ""
-  config: ""
-  db-name: ""
-  username: ""
-  password: ""
-  max-idle-conns: 10
-  max-open-conns: 100
-  log-mode: ""
-  log-zap: false
+  - disable: false
+    type: ""
+    alias-name: ""
+    path: ""
+    port: ""
+    config: ""
+    db-name: ""
+    username: ""
+    password: ""
+    max-idle-conns: 10
+    max-open-conns: 100
+    log-mode: ""
+    log-zap: false
 email:
   to: xxx@qq.com
   port: 465
@@ -142,12 +142,12 @@ timer:
   spec: '@daily'
   with_seconds: false
   detail:
-  - tableName: sys_operation_records
-    compareField: created_at
-    interval: 2160h
-  - tableName: jwt_blacklists
-    compareField: created_at
-    interval: 168h
+    - tableName: sys_operation_records
+      compareField: created_at
+      interval: 2160h
+    - tableName: jwt_blacklists
+      compareField: created_at
+      interval: 168h
 zap:
   level: info
   prefix: '[github.com/flipped-aurora/gin-vue-admin/server]'
@@ -158,3 +158,77 @@ zap:
   max-age: 30
   show-line: true
   log-in-console: true
+log:
+  agencyLinkkey: ce3ccdbd97f24daab7aa756648b3724f
+  encryptLinkkey: f05fe4704e124af8af2cc64f5a1e53eb
+  apiUrl: https://sys.cdggzy.com/electronicguarantee/electronic/test/Guaranteeinterface.do
+  agencyPublicKey: MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAulebbbM9qyVfN6WyhM7Qsr+wV2LUsOCRqEAmBwCJCMW4ibjG23NWJc8M0azIEnxM934nSLu1nSWJWhzkazUfzdeSn/BfRgMudtDD6njLoLZvrknOr5C765gXL9c+ofee1Ycgqrv5Dqdh3VSlRtRCd7bHHkqDhhFw0XGoFS01mNVnPCAZ0Uhly1iQDKiEIuylGejUUoIgHkDcONLP1pJYLamXJ0SVSRP5PfKezBHoa8alGHC0BKmxYnH+AOb32FjhU1wTQXm1+6NIpTvB/+Yu0wPiOQGFehXGaUWZoDJpP1/MPzLvQ0fhtXIIXBI3uHbbfOKn9cwbZzwX6kwfuClZMQIDAQAB
+  publicKey:
+    -----BEGIN PUBLIC KEY-----
+    MIICIjANBgkqhkiG9w0BAQEFAAOCAg8AMIICCgKCAgEAznuWLx1bemmUSpmxVhdG
+    b781DnvmQVv8H0DTmekmqI9fFRTBfFfSfb0/PPffNWTnCM4RhtaFC2QfrL3+swnb
+    HvLshV6JDJov/Nk18pl9m8V/MeOCfhdz8l8WBDASjxNhckI2+wXEPJOWQIprzskd
+    w/FDhYBEnpj0cobLmveqqpCP8K5wW42OKymAcZgjRynVTjkI0RI9yp+cp1T1P290
+    nMelFCXTzg0DjBnSXqsbnPUbxyn8/67x7MYTw67xH7nLWWSsvkEgBiliZDXJK2DL
+    uLLZx41tArP7elnCGNkeIwp8S1tstH3gLokId9LzrFCDYrkSFUVMRKlJPw0zxrno
+    dbCGyUd6Vfbggv8sr21k0XaI08ej5g4uQPiDlXujf3HR520QkAOcUmxIBitWuzBP
+    CUMKc+dugkPoUDaL18OGPtArvVQFhH1khiDhyT0DBO1o570AcLRqRtbAz+jiFfkN
+    qI4BsGOlgQntjSzd6PdAKBGpO78b5cJdzf9VfzhFW6pOTwwtAuujGjjm9fVxja0l
+    9ElBePFger2rZkdTWZqrghu8kKsfUSqCpHM/lwHMJoR1E5KX5xn3HBw3DVossNi0
+    45VAQqt9erL/AFy9g0svv/DeTaU011Xz6LNwmRHoLy1DfmTwo9aIrZu9Bd6WwpTT
+    n/pstF7L2SyheK684n4gM5cCAwEAAQ==
+    -----END PUBLIC KEY-----
+  privateKey:
+    -----BEGIN PRIVATE KEY-----
+    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
+    xO1kVrdT3IByJoAw6jgVHwrUNbLE/ao=
+    -----END PRIVATE KEY-----
+

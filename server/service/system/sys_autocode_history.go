@@ -70,7 +70,7 @@ func (autoCodeHistoryService *AutoCodeHistoryService) RollBack(info *systemReq.R
 	// 清除API表
 	ids := request.IdsReq{}
 	idsStr := strings.Split(md.ApiIDs, ";")
-	for i := range idsStr {
+	for i := range idsStr[0 : len(idsStr)-1] {
 		id, err := strconv.Atoi(idsStr[i])
 		if err != nil {
 			return err
